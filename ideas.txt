@@ -1,0 +1,3 @@
+- Hypothese :
+    - Le premier nom annonimisé ( Majuscule + 3 points) qui apparait dans le doc est la victime 
+    - Filtrer les phrases du texte et ne garder que les phrase où ce nom anonimisé apparait ( risque de perdre de l'info notamment si le dans une phase on ne refère pas à lui avec son nom mais avec un pronom "il/elle/la victime...")
