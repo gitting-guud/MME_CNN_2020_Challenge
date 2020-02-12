@@ -1,4 +1,13 @@
 - Hypothese :
     - Le premier nom annonimisé ( Majuscule + 3 points) qui apparait dans le doc est la victime 
     - Filtrer les phrases du texte et ne garder que les phrase où ce nom anonimisé apparait ( risque de perdre de l'info notamment si le dans une phase on ne refère pas à lui avec son nom mais avec un pronom "il/elle/la victime...")
-  
+
+
+
+
+-1/ Determiner la phrase parlant de l'accident/consolidation :
+	- Script Marvin ( keywords 2x plus frequents dans le contexte accident) ==> Amelioration de la baseline
+	- Word vectors ? au lieu du BoW utilisé dans la baseline (entrainer un classifieur phrase accident/consol/autre date)
+	- Graph of words (K-centroids sur le contexte de la date), utiliser les keywords trouvé pour la classification
+	- Classifieur utilisant toutes ces features précédentes ? 
+	- Vote entre des classifieurs chacun entrainé sur un type de feature précédent ? 
