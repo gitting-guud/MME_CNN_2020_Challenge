@@ -11,3 +11,6 @@
 	- Graph of words (K-centroids sur le contexte de la date), utiliser les keywords trouvé pour la classification
 	- Classifieur utilisant toutes ces features précédentes ? 
 	- Vote entre des classifieurs chacun entrainé sur un type de feature précédent ? 
+
+
+Try upsampling to improve the accuracy 
