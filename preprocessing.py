@@ -18,7 +18,8 @@ def process_text(text, stem=False):
     
     text_clean = []
     for sen in text : 
-        sen = unidecode.unidecode(sen.replace("’", " ").replace(","," ").replace("."," ").replace(";"," ").lower())
+#         sen = unidecode.unidecode(sen.replace("’", " ").replace(","," ").replace("."," ").replace(";"," ").lower())
+        sen = unidecode.unidecode(sen.replace("’", " ").replace(","," ").replace(";"," ").lower()) # keep the dots for the date_uniformizer
         sen = sen.replace("/ ","/") #some dates are in DD/ MM/ yyyy format
         tokens = sen.split()
         if stem :
