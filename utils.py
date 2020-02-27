@@ -113,6 +113,8 @@ def letter_date_to_submission_date(string) :
     
     if len(strings[0]) == 1 :
         day = "0"+strings[0]
+    elif strings[0] == "1er":
+        day = "01"
     else :
         day = strings[0]
         
