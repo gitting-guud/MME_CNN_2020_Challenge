@@ -210,7 +210,7 @@ def extract_X_sentences_around_all_dates(text, terms_discarding_the_date=terms_d
                                 context_date_removed_cleaned += element 
                         lll.append((context_date_removed_cleaned, date))
     else :
-        l = [re.findall("\d{1,2} [a-zéû]{3,9} \d{4}", STRING) for STRING in text]
+        l = [re.findall("\d{1,2}.{0,2} [a-zéû]{3,9} \d{4}", STRING) for STRING in text]
         indexes = [i for i in range(len(l)) if len(l[i])!=0]
         ll = [(" ".join(text[i-X+1 : i+X]), l[i]) for i in indexes]
         lll = []
@@ -253,7 +253,7 @@ def extract_X_sentences_around_all_dates_other_dates(text, terms_discarding_the_
     - this context can be passed to Spacy avg vectorizer to get the avg Word embedding of the sentence
     """
 
-    l = [re.findall("\d{1,2} [a-zéû]{3,9} \d{4}", STRING) for STRING in text]
+    l = [re.findall("\d{1,2}.{0,2} [a-zéû]{3,9} \d{4}", STRING) for STRING in text]
     indexes = [i for i in range(len(l)) if len(l[i])!=0]
     ll = [(" ".join(text[i-X+1 : i+X]), l[i]) for i in indexes]
 
